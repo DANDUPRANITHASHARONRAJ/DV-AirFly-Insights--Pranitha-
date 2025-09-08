@@ -1,0 +1,36 @@
+Feature,Data_Type,Description
+FL_DATE,datetime64[ns],Flight date (datetime)
+AIRLINE,object,Airline name
+AIRLINE_DOT,object,Airline DOT description
+AIRLINE_CODE,object,Airline code (IATA)
+DOT_CODE,int64,DOT code (numeric identifier)
+FL_NUMBER,int64,Flight number
+ORIGIN,object,Origin airport code
+ORIGIN_CITY,object,Origin city
+DEST,object,Destination airport code
+DEST_CITY,object,Destination city
+CANCELLED,int64,"Cancelled (0=No,1=Yes)"
+CANCELLATION_CODE,object,Cancellation code (A/B/C/D/N)
+DIVERTED,int64,"Diverted (0=No,1=Yes)"
+CRS_ELAPSED_TIME,float64,CRS elapsed time (scheduled)
+ELAPSED_TIME,float64,"Elapsed time in minutes (actual, NaN if missing)"
+AIR_TIME,float64,"Air time in minutes (actual, NaN if missing)"
+DISTANCE,int64,Distance in miles
+DELAY_DUE_CARRIER,float64,"Delay due to carrier (minutes, 0 if missing)"
+DELAY_DUE_WEATHER,float64,"Delay due to weather (minutes, 0 if missing)"
+DELAY_DUE_NAS,float64,"Delay due to NAS (minutes, 0 if missing)"
+DELAY_DUE_SECURITY,float64,"Delay due to security (minutes, 0 if missing)"
+DELAY_DUE_LATE_AIRCRAFT,float64,"Delay due to late aircraft (minutes, 0 if missing)"
+CRS_DEP_TIME_CLEAN,object,Scheduled departure time (HH:MM)
+DEP_TIME_CLEAN,object,Actual departure time (HH:MM)
+DEP_DELAY_CLEAN,float64,Departure delay (minutes)
+TAXI_OUT_CLEAN,float64,Taxi out time (minutes)
+WHEELS_OFF_CLEAN,object,Wheels off time (HH:MM)
+WHEELS_ON_CLEAN,object,Wheels on time (HH:MM)
+TAXI_IN_CLEAN,float64,Taxi in time (minutes)
+ARR_TIME_CLEAN,object,Actual arrival time (HH:MM)
+ARR_DELAY_CLEAN,float64,Arrival delay (minutes)
+CRS_ARR_TIME_CLEAN,object,Scheduled arrival time (HH:MM)
+MONTH,int32,Month of flight (1-12)
+DAY_OF_WEEK,int32,"Day of week (0=Monday,6=Sunday)"
+Route,object,Route (Origin-Destination)
