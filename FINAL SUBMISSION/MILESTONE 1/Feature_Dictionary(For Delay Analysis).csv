@@ -1,0 +1,20 @@
+Feature Name,Description,Data Type,Notes
+FL_DATE,Flight date,Datetime,Original flight date
+AIRLINE,Airline name,Categorical,Full airline name
+ORIGIN,Origin airport code,Categorical,3-letter airport code
+DEST,Destination airport code,Categorical,3-letter airport code
+DEP_DELAY,Departure delay in minutes,Numeric,"Negative if early, 0 if on-time"
+ARR_DELAY,Arrival delay in minutes,Numeric,"Negative if early, 0 if on-time"
+TAXI_OUT,Taxi out time in minutes,Numeric,Time from gate departure to takeoff
+TAXI_IN,Taxi in time in minutes,Numeric,Time from landing to gate arrival
+CANCELLED,Flight cancelled flag,Binary,"0 = not cancelled, 1 = cancelled"
+DIVERTED,Flight diverted flag,Binary,"0 = not diverted, 1 = diverted"
+MONTH,Month of flight,Integer,"1-12, extracted from FL_DATE"
+DAY_OF_WEEK,Day of week of flight,Integer,"0=Monday to 6=Sunday, extracted from FL_DATE"
+Route,Flight route,Categorical,Concatenation of ORIGIN-DEST
+CRS_DEP_TIME_HOUR,Scheduled departure hour,Integer,"0-23, extracted from CRS_DEP_TIME"
+DEP_TIME_HOUR,Actual departure hour,Integer,"0-23, extracted from DEP_TIME"
+WHEELS_OFF_HOUR,Wheels-off hour,Integer,"0-23, extracted from WHEELS_OFF"
+WHEELS_ON_HOUR,Wheels-on hour,Integer,"0-23, extracted from WHEELS_ON"
+CRS_ARR_TIME_HOUR,Scheduled arrival hour,Integer,"0-23, extracted from CRS_ARR_TIME"
+ARR_TIME_HOUR,Actual arrival hour,Integer,"0-23, extracted from ARR_TIME"
